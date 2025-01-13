@@ -178,9 +178,7 @@ nav .fa {
 
 /* Contact */
 .contact-detail {
-	padding: 80px 35px 73px;
 	background-color: #232323;
-	box-shadow: 0px 0px 45px rgb(0 0 0 / 20%);
 }
 
 .sub-title {
@@ -194,8 +192,6 @@ nav .fa {
 }
 
 .contact-detail p {
-	margin-top: 8px;
-	margin-bottom: 30px;
 	color: rgba(255, 255, 255, 0.8) !important;
 }
 
@@ -212,6 +208,15 @@ nav .fa {
 .contact-detail i {
 	font-size: 1.063rem;
 	line-height: 1em;
+}
+
+.contact-detail p {
+    letter-spacing: 1.025px;
+    line-height: 1.875rem;
+    max-width: 32.5rem;
+    width: 100%;
+    margin-inline: auto;
+    padding-top: 1.125rem;
 }
 
 /* Utilities Class */
@@ -343,4 +348,97 @@ li {
 	.sec-title h1 {
 		font-size: 24px;
 	}
+
+	.contact-detail p {
+		letter-spacing:normal;
+		line-height: 1.75;
+	}
+}
+
+/* Split Section Styles */
+.split-section {
+    background-color: #fff;
+}
+
+/* Image Styles */
+.image-wrapper {
+    position: relative;
+    padding: 1rem;
+}
+
+.image-wrapper img {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00c896;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 160px;
+    transform: translateY(25%);
+}
+
+.experience-badge span {
+    display: block;
+}
+
+/* Content Styles */
+.content-wrapper {
+    padding: 1rem;
+}
+
+.section-header h6 {
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.features-list {
+    margin-top: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-item i {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.feature-text h5 {
+    color: #232323;
+    font-weight: 600;
+		margin: 0;
+}
+
+.feature-text p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .experience-badge {
+        transform: translateY(0);
+        position: relative;
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    
+    .content-wrapper {
+        padding-top: 2rem;
+    }
+
+		.experience-badge {
+			min-width: 100%;
+		}
+
 }
